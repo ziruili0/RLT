@@ -1,4 +1,33 @@
 url: https://teazrq.github.io/RLT/
+# 这是我们刚刚新加的部分，用来设置网站主题
 template:
   bootstrap: 5
+  bslib:
+    preset: minty
+
+# 这是我们之前讨论过的导航栏配置
+navbar:
+  structure:
+    left: [intro, reference, articles]
+    right: [github]
+  components:
+    intro:
+      text: "Get started"
+      href: articles/RLT.html # 假设您有一个 RLT.Rmd 教程
+    reference:
+      text: "Reference"
+      href: reference/index.html
+    articles:
+      text: "Articles"
+      href: articles/index.html
+    github:
+      icon: fa-github fa-lg
+      href: https://github.com/ziruili0/RLT
+
+# 这是我们之前讨论过的函数参考页分组
+reference:
+  - title: "Core Functions"
+    contents:
+      - RLT
+      - predict.RLT
 
